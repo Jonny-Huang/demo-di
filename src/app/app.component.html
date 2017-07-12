@@ -1,0 +1,21 @@
+<div style="background:orange; padding: 24px;">
+  <h1>AppModule ( providers: [LoginService] )</h1>
+
+  <div style="background:CadetBlue; padding: 24px;">
+    <h1>App Component</h1>
+    <div>login count：{{loginService.login_count}}</div>
+    <div>logout count：{{loginService.logout_count}}</div>
+    <div>Is login：{{loginService.isLogin}}</div>
+    <div>
+      <button (click)="login()">login</button>
+      <button (click)="logout()">logout</button>
+    </div>
+    <br>
+    <app-page1></app-page1>
+    <br>
+    <div style="border-width:medium; border-style:dashed; padding: 12px;">
+      <h2 style="color: White;">router-outlet</h2>
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,10 @@
+<div style="background:LightBlue; padding: 24px">
+  <h1>Asider Component</h1>
+  <div>login count：{{loginService.login_count}}</div>
+  <div>logout count：{{loginService.logout_count}}</div>
+  <div>Is login：{{loginService.isLogin}}</div>
+  <div>
+    <button (click)="loginService.login()">login</button>
+    <button (click)="loginService.logout()">logout</button>
+  </div>
+</div>
